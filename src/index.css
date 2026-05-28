@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #ffffff; 
+  --color-surface-dim: #f3f4f6;
+  --color-surface-bright: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f9fafb;
+  --color-surface-container: #f3f4f6;
+  --color-surface-container-high: #e5e7eb;
+  --color-surface-container-highest: #d1d5db;
+  
+  --color-on-surface: #111827;
+  --color-on-surface-variant: #4b5563;
+  
+  --color-primary: #dc2626;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #fee2e2;
+  --color-on-primary-container: #991b1b;
+  
+  --color-secondary: #4f46e5;
+  --color-on-secondary: #ffffff;
+  
+  --color-background: #ffffff;
+  --color-on-background: #111827;
+  --color-background-warm: #fafaf9;
+  
+  --color-outline: #d1d5db;
+  --color-outline-hairline: #e5e7eb;
+  --color-text-muted: #6b7280;
+  
+  --font-display-lg: 'Playfair Display', serif;
+  --font-headline-md: 'Playfair Display', serif;
+  --font-headline-sm: 'Playfair Display', serif;
+  --font-body-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-body-base: 'Plus Jakarta Sans', sans-serif;
+  --font-body-bold: 'Plus Jakarta Sans', sans-serif;
+  --font-label-caps: 'Plus Jakarta Sans', sans-serif;
+  --font-label-sm: 'Plus Jakarta Sans', sans-serif;
+}
+
+@layer utilities {
+  .gap-xs { gap: 4px; }
+  .gap-sm { gap: 8px; }
+  .gap-md { gap: 16px; }
+  .gap-lg { gap: 24px; }
+  .gap-xl { gap: 32px; }
+  .p-xs { padding: 4px; }
+  .p-sm { padding: 8px; }
+  .p-md { padding: 16px; }
+  .p-lg { padding: 24px; }
+  .p-xl { padding: 32px; }
+  .px-xs { padding-left: 4px; padding-right: 4px; }
+  .px-sm { padding-left: 8px; padding-right: 8px; }
+  .px-md { padding-left: 16px; padding-right: 16px; }
+  .px-lg { padding-left: 24px; padding-right: 24px; }
+  .px-xl { padding-left: 32px; padding-right: 32px; }
+  .py-xs { padding-top: 4px; padding-bottom: 4px; }
+  .py-sm { padding-top: 8px; padding-bottom: 8px; }
+  .py-md { padding-top: 16px; padding-bottom: 16px; }
+  .py-lg { padding-top: 24px; padding-bottom: 24px; }
+  .py-xl { padding-top: 32px; padding-bottom: 32px; }
+  .mb-xs { margin-bottom: 4px; }
+  .mb-sm { margin-bottom: 8px; }
+  .mb-md { margin-bottom: 16px; }
+  .mb-lg { margin-bottom: 24px; }
+  .mb-xl { margin-bottom: 32px; }
+  .mt-xs { margin-top: 4px; }
+  .mt-sm { margin-top: 8px; }
+  .mt-md { margin-top: 16px; }
+  .mt-lg { margin-top: 24px; }
+  .mt-xl { margin-top: 32px; }
+  
+  .px-margin-mobile { padding-left: 16px; padding-right: 16px; }
+  .md\:px-margin-desktop { padding-left: 48px; padding-right: 48px; }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background-warm);
+    color: var(--color-on-surface);
+    font-family: var(--font-body-base);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.text-display-lg {
+  font-family: var(--font-display-lg);
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.text-display-lg-mobile {
+  font-family: var(--font-display-lg);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.text-display-md {
+  font-family: var(--font-display-lg);
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.text-display-md-mobile {
+  font-family: var(--font-display-lg);
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.text-display-sm {
+  font-family: var(--font-display-lg);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.text-headline-md {
+  font-family: var(--font-headline-md);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.text-headline-sm {
+  font-family: var(--font-headline-sm);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+.text-body-lg {
+  font-family: var(--font-body-lg);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+.text-body-base {
+  font-family: var(--font-body-base);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.text-body-bold {
+  font-family: var(--font-body-bold);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.text-label-caps {
+  font-family: var(--font-label-caps);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.text-label-sm {
+  font-family: var(--font-label-sm);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
