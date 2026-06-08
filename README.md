@@ -85,7 +85,7 @@ src/
 
 ## 👨‍💻 Author
 
-**Karan Kumar Mathur**
+**Karan Kumar**
 * **Role:** Full-Stack Developer
 * **GitHub:** [@karan9389](https://github.com/karan9389)
 * **Email:** [karan.kumar2023@glbajajgroup.org](mailto:karan.kumar2023@glbajajgroup.org)
